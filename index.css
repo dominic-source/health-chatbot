@@ -182,7 +182,7 @@
 }
 
 .mobile {
-    display: flex;
+    display: block;
 }
 
 .navigation {
