@@ -196,7 +196,7 @@
     font-weight: 700;
     word-wrap: break-word;
     border-radius: 100px;
-    width: 343px;
+    min-width: 223px;
     height: 64px;
 }
 
@@ -623,6 +623,7 @@
 }
 
 .para {
+    width: 100%;
     color: rgba(31, 22, 15, 0.64);
     font-size: 18px;
     font-family: Urbanist;
@@ -781,7 +782,7 @@
     position: relative;
     z-index: 1;
     bottom: 64px;
-    width: 375px;
+    width: 100%;
     height: 64px;
     background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, white 100%);
 }
@@ -1079,6 +1080,7 @@
     .para {
         text-align: left;
         height: 64px;
+        width: 458px;
     }
 
     .pic {
