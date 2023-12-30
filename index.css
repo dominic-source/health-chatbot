@@ -997,7 +997,7 @@
         grid-template-columns: repeat(3, 1fr);
         gap: 120px;
         padding: 20px;
-        width: 1168px;
+        width: 100%;
     }
 
 
@@ -1059,7 +1059,7 @@
     }
 
     .middle {
-        box-sizing: content-box;
+        /* box-sizing: content-box; */
         padding: 100px;
     }
 
@@ -1162,7 +1162,7 @@
 
     .space {
         position: relative;
-        right: 700px;
+        right: 800px;
         bottom: 150px;
         z-index: -1;
     }
