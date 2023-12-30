@@ -156,6 +156,7 @@
 }
 
 #back-img {
+    /* box-sizing: content-box; */
     background-color: #3D4A26;
     background-image: url("static/images/total.svg");
     width: 100%;
@@ -293,22 +294,25 @@
 
 .disp {
     margin: 20px;
-    height: 212px;
+    /* height: 212px; */
     background-color: #4B3425;
     border-radius: 50px;
 }
 
-.disp>div {
-    margin: auto auto;
-    padding-left: 50px;
-    padding-bottom: 5px;
-}
-
-.disp img {
-    transform: translateY(40px) !important;
-    width: 225px !important;
-    height: 150px !important;
-}
+.disp-slideshow-container {
+    position: relative;
+    max-width: 100%;
+    margin: auto;
+  }
+  
+  .disp-slides img {
+    display: none;
+    width: 100%;
+  }
+  
+  .disp-slides img:first-child {
+    display: block;
+  }
 
 .dot {
     width: 12px;
@@ -347,7 +351,7 @@
 }
 
 .icon-card {
-    width: 311px;
+    max-width: 311px;
     height: 362px;
     display: flex;
     flex-direction: column;
@@ -512,7 +516,7 @@
     background-color: rgba(232, 221, 217, 1);
     border-radius: 50px;
     width: 100%;
-    height: 289px;
+    min-height: 289px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -610,7 +614,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 343px;
+    width: 100%;
     height: 64px;
     background-color: #F7F4F2;
     padding-left: 10px;
@@ -1046,6 +1050,7 @@
     }
 
     .main {
+        width:  100%;
         flex-direction: row;
         box-sizing: content-box;
         padding-left: 40px;
@@ -1054,6 +1059,7 @@
     }
 
     .middle {
+        box-sizing: content-box;
         padding: 100px;
     }
 
@@ -1062,7 +1068,7 @@
     }
 
     .navigation {
-        width: 1330px;
+        width: 90%;
         height: 80px;
     }
 

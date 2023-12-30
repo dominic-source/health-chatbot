@@ -13,14 +13,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content="Health consultation website" />
     <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="index2.css" />
+
     <link rel="stylesheet" href="static/styles/general.css" />
 
-    <!-- <link
+    <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
       crossorigin="anonymous"
-    /> -->
+    />
     <script src="index.js" async defer></script>
   </head>
   <body>
@@ -35,7 +37,36 @@
       <img src="static/images/image-mobile.svg" alt="logo" class="mobile" />
       <aside class="aside-flex aside-w2">
         <div class="menu desktop">Main</div>
-        <div class="menu">Menu</div>
+        <div class="menu desktop">Menu</div>
+
+        <div class="dropdown mobile" style="right: 30px;">
+          <button
+            class="btn btn-primary dropdown-toggle"
+            type="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            Menu
+          </button>
+          <ul class="dropdown-menu">
+            <li>
+              <button class="dropdown-item" type="button">Homepage</button>
+            </li>
+            <li>
+              <button class="dropdown-item" type="button">Platform</button>
+            </li>
+            <li>
+              <button class="dropdown-item" type="button">Assessment</button>
+            </li>
+            <li>
+              <button class="dropdown-item" type="button">About Us</button>
+            </li>
+            <li>
+              <button class="dropdown-item" type="button">Contact Us</button>
+            </li>
+            <li><button class="dropdown-item" type="button">Blog</button></li>
+          </ul>
+        </div>
         <div class="dot"></div>
       </aside>
     </header>
@@ -80,78 +111,15 @@
       </section>
     </main>
 
-    <section
-      id="carouselExampleFade"
-      class="carousel slide mobile disp carousel-fade"
-      data-bs-ride="carousel"
-    >
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img
-            src="static/images/Company Logo.svg"
-            class="d-block w-100"
-            alt="..."
-          />
-        </div>
-
-        <div class="carousel-item">
-          <img
-            src="static/images/Company Logo (1).svg"
-            class="d-block w-100"
-            alt="..."
-          />
-        </div>
-
-        <div class="carousel-item">
-          <img
-            src="static/images/Company Logo (2).svg"
-            class="d-block w-100"
-            alt="..."
-          />
-        </div>
-
-        <div class="carousel-item">
-          <img
-            src="static/images/Company Logo (3).svg"
-            class="d-block w-100"
-            alt="..."
-          />
-        </div>
-
-        <div class="carousel-item">
-          <img
-            src="static/images/Company Logo (4).svg"
-            class="d-block w-100"
-            alt="..."
-          />
-        </div>
-
-        <div class="carousel-item">
-          <img
-            src="static/images/Company Logo (5).svg"
-            class="d-block w-100"
-            alt="..."
-          />
-        </div>
+    <section class="disp-slideshow-container mobile disp">
+      <div class="disp-slides">
+        <img src="static/images/Company Logo.svg" alt="..." />
+        <img src="static/images/Company Logo (1).svg" alt="..." />
+        <img src="static/images/Company Logo (2).svg" alt="..." />
+        <img src="static/images/Company Logo (3).svg" alt="..." />
+        <img src="static/images/Company Logo (4).svg" alt="..." />
+        <img src="static/images/Company Logo (5).svg" alt="..." />
       </div>
-      <button
-        class="carousel-control-prev"
-        type="button"
-        data-bs-target="#carouselExampleFade"
-        data-bs-slide="prev"
-      >
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button
-        class="carousel-control-next"
-        type="button"
-        data-bs-target="#carouselExampleFade"
-        data-bs-slide="next"
-      >
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
     </section>
     <section class="bottom-sub desktop disp-desktop">
       <img src="static/images/Company Logo.svg" />
@@ -639,12 +607,12 @@
         class="desktop"
       />
       <div class="latest-bottom">
-        <h3>Homepage</h3>
-        <h3>Platform</h3>
-        <h3>Assessment</h3>
-        <h3>About Us</h3>
-        <h3>Contact Us</h3>
-        <h3>Blog</h3>
+        <h3><a>Homepage</a></h3>
+        <h3><a>Platform</a></h3>
+        <h3><a>Assessment</a></h3>
+        <h3><a>About Us</a></h3>
+        <h3><a>Contact Us</a></h3>
+        <h3><a>Blog</a></h3>
       </div>
       <img src="static/images/last-arrow.svg" alt="last arrow" class="mobile" />
 
@@ -674,16 +642,18 @@
       </div>
 
       <div class="last-last">
-        <h2>Get Your Aged Parents <span style="color: #926247;">Healthier.</span></h2>
+        <h2>
+          Get Your Aged Parents <span style="color: #926247">Healthier.</span>
+        </h2>
         <img src="static/images/orange-button.svg" alt="orange-button" />
         <img src="static/images/green-button.svg" alt="green-button" />
       </div>
     </section>
 
-    <!-- <script
+    <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"
-    ></script> -->
+    ></script>
   </body>
 </html>
